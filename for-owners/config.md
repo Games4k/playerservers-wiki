@@ -22,34 +22,42 @@ mysql:
   username: web
   password: webmaster
   database: playerservers
+  useSSL: true
 
 # This setting defines port range
 ports:
   start-port: 30000
   end-port: 40000
 
+# This feature is still experimental, tho we had to implement it
+# due to SpigotMC rules. If it does not work, please manually
+# download server.jar and put it in your PlayerServers/templates
+# directory, and make sure it is named Server.jar.
 build-tools:
   # Should we log build-tools console output? Highly recommended to set
   # to true, as it will help me a lot with potential issues.
   build-tools-debug: true
 
   # What version should we build for PlayerServers?
-  # Do "latest" for latest, do "1.8.8" for 1.8.8, etc.
+  # Do "latest" for latest, or do "1.8.8" for 1.8.8, etc.
   # If you want to change the sub-servers version,
   # you will have to delete templates/Spigot.jar first,
-  # and than reboot the server. Btw, it is highly
-  # recommended to use 1.8.8 for sub-servers.
+  # and than reboot the server.
   #
-  # ALSO, KEEP IN MIND THAT 1.8.8 SERVERS WILL NOT
-  # BUILD IF YOU HAVE JAVA 11+, ESPECIALLY JAVA 13!
-  # USE JAVA 8 FOR THE BEST POSSIBLE EXPERIENCE
-  build-version: "1.8.8"
+  # We only guarantee that "latest" will always work properly.
+  # If you try to build older versions, it may fail and you may
+  # need to do build it manually using BuildTools. In case you
+  # need any support with it, please join our Discord
+  build-version: "latest"
+
+# Where should players be moved after they /stop or /ps kill their server?
+balancer:
+  - Hub1
+  - Hub2
 
 # Use player-name instead of server UUID? Basically, when turned on, server-names
-# will be called Mike instead of (for example) aa386b6h
-# CURRENTLY EXPERIMENTAL. SWITCHING THIS OPTION AFTER HAVING PLAYERSERVERS
-# COULD (but most likely won't) POTENTIALLY BREAK THE CURRENT SETUP. USE AT CAUTION.
-use-usernames: false
+# will be equal to player username instead of (for example) aa386b6h
+use-usernames: true
 
 # What is the max amount of servers that can be running at once?
 max-running-instances: 15
@@ -62,6 +70,8 @@ minutes-to-shutdown: 15
 # After how many seconds after executing cp -r <templatefile> <yourserverfolder>
 # should we launch the server? Increase this if you get could not connect message.
 copy-delay: 3
+
+launch-command: "screen -dmS %uuid% java -Xmx%mem%M -jar Spigot.jar"
 
 # In how much seconds, after first boot-up of the server should we
 # teleport the player to their sub-server? This depends on the strength
@@ -112,10 +122,18 @@ plugin-limiting:
   # What is the max players each server should have?
   max-plugins-per-server: 20
 
+# Should we enable smart /ps command? You can find more info about it here:
+# https://gitlab.com/OpenSource02/playerservers/-/issues/21
+smart-command: false
+
 # Should we enable permissions for server creation, deletion & more?
 # If set to false, all the players will have access to those basic commands.
 # Obviously, admin commands require permission no matter what.
 enable-permissions: true
+
+# BETA FEATURES. USE AT OWN RISK!!
+multi-node: false
+experimental-rename: false
 ```
 
 ## Current messages.toml
