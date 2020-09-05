@@ -16,6 +16,10 @@ description: >-
 
 ## Instructions
 
+{% hint style="info" %}
+Before reading this, please read [update notes](https://www.spigotmc.org/resources/82268/update?update=359257) for version v1.0-dev2.
+{% endhint %}
+
 The installation process for PlayerServers Daemon, even in developer beta is pretty straight forward. The first thing you need to do is simply enable multi-node support under experimental options at the end of your configuration file. After than, just reboot your BungeeCord and let the plugin generate required files.
 
 After that's done, create a folder Daemon \(in /root directory, if possible\). Download the following jar file and drop it into your Daemon folder:
