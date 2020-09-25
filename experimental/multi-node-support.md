@@ -24,7 +24,7 @@ The installation process for PlayerServers Daemon, even in developer beta is pre
 
 After that's done, create a folder Daemon \(in /root directory, if possible\). Download the following jar file and drop it into your Daemon folder:
 
-{% file src="../.gitbook/assets/daemon-v1.0-dev3.zip" caption="Download Daemon v1.0-dev3" %}
+{% file src="../.gitbook/assets/daemon-v1.0-dev4.zip" caption="Download Daemon v1.0-dev4" %}
 
 After that's done, run it for the first time by using `java -Xmx200M -jar Daemon.jar` in order to let it generate the required files. Now exit it by typing in `exit`. After that's done, configure both multinode.toml inside your BungeeCord/plugins/PlayerServers/multinode.toml and your Daemon config.toml which will be generated in your Daemon root directory.
 
