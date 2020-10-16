@@ -26,9 +26,9 @@ After that's done, create a folder Daemon \(in /root directory, if possible\). D
 
 {% file src="../.gitbook/assets/daemon-v1.0-dev4.zip" caption="Download Daemon v1.0-dev4" %}
 
-After that's done, run it for the first time by using `java -Xmx200M -jar Daemon.jar` in order to let it generate the required files. Now exit it by typing in `exit`. After that's done, configure both multinode.toml inside your BungeeCord/plugins/PlayerServers/multinode.toml and your Daemon config.toml which will be generated in your Daemon root directory.
+After that's done, run it for the first time by using `java -Xmx200M -jar Daemon.jar` in order to let it generate the required files. Now exit it by typing in `exit`. After that's done, configure both multinode.toml inside your BungeeCord/plugins/PlayerServers/multinode.toml and your Daemon config.toml which will be generated in your Daemon root directory - please don't forget to include the same key inside both configs!
 
-As the last step, it is required to add a file named Spigot.jar \(any version from 1.8.8-1.16.1\) to your Daemon/templated directory and add all the wanted plugins to Daemon/plugins-to-be-added-ingame directory. If any of those directories were not created automatically, please create those manually. After that's done, please also copy PlayerServerCore.jar from BungeeCord/plugins/PlayerServers/templates/PlayerServerCore.jar to your Daemon/templates directory.
+As the last step, it is required to add a file named Spigot.jar \(any version from 1.8.8-1.16.1\) to your Daemon/templated directory and add all the wanted plugins to Daemon/plugins-to-be-added-ingame directory. If any of those directories were not created automatically, please create those manually.
 
 Now, you can just make a start.sh script with the following code
 
