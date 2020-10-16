@@ -134,6 +134,7 @@ enable-permissions: true
 # BETA FEATURES. USE AT OWN RISK!!
 multi-node: false
 experimental-rename: false
+pterodactyl-compatibility: false
 ```
 
 ## Current messages.toml
