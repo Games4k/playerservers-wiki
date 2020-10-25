@@ -15,7 +15,7 @@
 ## For Owners
 
 * [Plugin Installation Tutorial](for-owners/installation.md)
-* [Current Configuration File](for-owners/config.md)
+* [Current Config & Messages File](for-owners/config.md)
 * [Permissions & Commands](for-owners/permissions-and-commands.md)
 * [Limitations](for-owners/limitations/README.md)
   * [Permission-based RAM](for-owners/limitations/permission-based-ram.md)

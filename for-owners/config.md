@@ -1,4 +1,4 @@
-# Current Configuration File
+# Current Config & Messages File
 
 Below you can see the contents of the newest BungeeCord PlayerServers configuration file.
 
@@ -141,6 +141,7 @@ pterodactyl-compatibility: false
 
 ```text
 run-in-game = "&9Error> &7Oops! You can only run this command in-game."
+not-enough-arguments = "&9PlayerServers> &7Oops, not enough arguments: /playerservers admin test <node-name>"
 not-enough-arguments-kill = "&9PlayerServers> &7Oops, not enough arguments: /playerserver kill stop <uuid (example: 1F4a2id)>"
 not-enough-arguments-delete = "&9PlayerServers> &7Not enough arguments. &a/playerservers admin delete <uuid>. Please keep in mind that you should not enter the full id. You should just enter the first part (example: if full UUID is 1234-5678-1223-5623, you should just enter 1234)."
 no-permission = "&9Error> &7Oops, it seems like you don't have permission to do that."
@@ -164,16 +165,19 @@ sending-to-remote-server = "&9Process> &7We're beginning the creation of your se
 
 [server-stop]
 
+not-online = "&9PlayerServers> &7Oops, it seems like your server is not online."
 successfully-killed = "&9Success> &7Your server has been successfully killed."
 
 [server-start]
 
 prepairing = "&9PlayerServers> &7Preparing to launch your server."
 
-successfully-started = ""
-
 [server-connect]
 
 connected = "&9PlayerServer> &7You've been successfully sent to your server. Your friends can use &a/server %uuid%&7 to connect."
+
+[server-restart]
+
+killing = "&9PlayerServers> &7Trying to kill your server..."
 ```
 
