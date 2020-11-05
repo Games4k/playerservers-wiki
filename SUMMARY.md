@@ -29,6 +29,7 @@
 
 ## experimental
 
+* [Templates](experimental/templates.md)
 * [Multi-Node Support](experimental/multi-node-support.md)
 
 ---
