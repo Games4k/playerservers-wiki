@@ -20,7 +20,7 @@ templates:
 ```
 
 As you can see, the template is the following:   
-JarFileNameFromPluginsToBeInstalledIngameFolder;PluginNameFromPlugin.yml;Description
+JarFileNameFromPluginsToBeInstalledIngameFolder;PluginNameFromPlugin.yml;Descriptions
 
 * JarFileNameFromPluginsToBeInstalledIngameFolder - the name of the jar file from the plugins to be installed ingame folder \(example: EssentialsX-2.18.1.0.jar\)
 * PluginNameFromPlugin.yml - Find it by openning the plugin with WinRar, for example. Inside, you will see plugin.yml. Copy the plugin name from there
