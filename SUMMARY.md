@@ -2,6 +2,7 @@
 
 * [PlayerServers - General](README.md)
 * [Updates](updates/README.md)
+  * [v1.1 to v1.2](updates/v1.1-to-v1.2.md)
   * [8.0 to v1.0](updates/8.0-to-v1.0.md)
   * [5.0 to 6.0](updates/5.0-to-6.0.md)
   * [3.7-D to 4.0](updates/update1.md)
