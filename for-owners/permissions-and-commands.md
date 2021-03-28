@@ -25,12 +25,19 @@ description: Below is the list of all the commands & plugin permissions
     <tr>
       <td style="text-align:left">
         <p>/playerserver</p>
-        <p>create</p>
+        <p>create <b>&lt;tmp&gt;</b>
+        </p>
       </td>
-      <td style="text-align:left">none</td>
+      <td style="text-align:left">/ps create</td>
       <td style="text-align:left">PlayerServers Bungee</td>
-      <td style="text-align:left">Creates a new subserver if you don&apos;t already
-        <br />have one.</td>
+      <td style="text-align:left">
+        <p>Creates a new subserver if you don&apos;t already
+          <br />have one. &lt;tmp&gt; variable is optional and</p>
+        <p>used to specify template name. If no tmp is</p>
+        <p>specified, and if players just do /ps create,</p>
+        <p>it will simply just create the server with the</p>
+        <p>&quot;default&quot; template.</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left">
@@ -123,6 +130,25 @@ description: Below is the list of all the commands & plugin permissions
         <p>PlayerServerCore accross all of your Player</p>
         <p>servers. Note that this will require manual</p>
         <p>restart of each subserver, in order to take effect</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">/menu</td>
+      <td style="text-align:left">none</td>
+      <td style="text-align:left">PlayerServers Core</td>
+      <td style="text-align:left">
+        <p>Opens up Server Manager GUI for general</p>
+        <p>info and statistics, as well as for installing</p>
+        <p>predefined plugins</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">/config</td>
+      <td style="text-align:left">none</td>
+      <td style="text-align:left">PlayerServers Core</td>
+      <td style="text-align:left">
+        <p>Opens up config file manager for editing</p>
+        <p>config files</p>
       </td>
     </tr>
   </tbody>
